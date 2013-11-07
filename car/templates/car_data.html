@@ -1,0 +1,30 @@
+<html>
+<head> <title> Car Data </title></head>
+<body>
+	<h1> Car data </h1>
+	<p> <a href = "/"> Home </a> </p>
+
+	<table> 
+		<th> Brand </th>
+		<th> Model </th>
+		{% for i in brand %}
+			<tr> 
+			
+				<td>{{i.0}}</td>
+				<td>{{i.1}}</td>
+			
+			
+			</tr>
+		{% empty %}
+			<td>No data</td>
+			<td></td>
+
+		{% endfor %}
+
+
+	</table>
+
+	
+
+</body>
+</html>
